@@ -4,19 +4,16 @@
  */
 package Modelo;
 
-import java.util.ArrayList;
-
 /**
  *
- * @author gokum
+ * @author user
  */
+
 public interface Almacenamiento {
-        
-    public void Create();
     
-    public ArrayList Read();
+    public void create();
+    public ArrayList read();
+    public void update();
+    public void delete();
     
-    public void Update();
-    
-    public void Delete();
 }
