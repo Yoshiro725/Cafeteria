@@ -14,6 +14,9 @@ import java.util.logging.Logger;
  * @author gokum
  */
 public class ConexionBD {
+    Connection connection  = null;
+    
+    public void connectDB(){
             try{
             try{
                 Class.forName("org.postgresql.Driver");
