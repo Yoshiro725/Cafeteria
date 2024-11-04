@@ -4,7 +4,12 @@
  */
 package Modelo;
 
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -32,8 +37,22 @@ public class CRUDCliente implements Almacenamiento{
 
     @Override
     public void create() {
-
-        
+         objBD.connectDB();
+         try{
+            String query = "INSERT INTO Clientes (nombre, correo, telefono) VALUES (?,?,?)";
+            PreparedStatement statement = objBD.connection.prepareStatement(query);
+            statement.setString(1, objMCliente.getNombre());
+            statement.setString(2, objMCliente.getCorreo());
+            statement.setInt(3, objMCliente.getTelefono());
+            
+            statement.executeLargeUpdate();
+                    
+            } catch (SQLException ex) {
+            Logger.getLogger(CRUDCliente.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            finally{
+            objBD.desconectedDB();
+            }
 
 
     }
