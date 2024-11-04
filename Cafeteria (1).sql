@@ -9,7 +9,7 @@ CREATE TABLE Clientes (
     id_cliente SERIAL PRIMARY KEY,
     nombre VARCHAR(100),
     correo VARCHAR(100),
-    telefono VARCHAR(15)
+    telefono INT CHECK (telefono BETWEEN 100000000 AND 9999999999)  -- Asegura que sea un número de 10 dígitos
 );
 
 -- Crear tabla Tipo de Producto
