@@ -75,12 +75,30 @@ public class CRUDCuentaPuntos implements Almacenamiento{
 
     @Override
     public void update() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        objBD.connectDB();
+
+        try {
+            objBD.connection.createStatement().execute(
+                    "UPDATE Cuenta_Puntos SET ? = ? WHERE id_cuenta = " + objMCuentaPuntos.getId_cuenta()+ ";"
+            );
+        } catch (java.sql.SQLException sqle) {
+            System.out.println("Error: " + sqle);
+        }
+        objBD.desconectedDB();    
     }
 
     @Override
     public void delete() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        objBD.connectDB();
+            try {
+                String query = "DELETE FROM clientes WHERE ClienteID = ?";
+                PreparedStatement statement = objBD.connection.prepareStatement(query);
+                statement.setInt(1, objMCuentaPuntos.getId_cuenta());
+                statement.executeUpdate();
+            } catch (SQLException ex) {
+                Logger.getLogger(CRUDCliente.class.getName()).log(Level.SEVERE, null, ex);
+            } finally {
+                objBD.desconectedDB();
     }
-    
+    }
 }
