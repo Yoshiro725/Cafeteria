@@ -10,6 +10,7 @@ package Modelo;
  */
 public class Cliente {
     
+    private int id_cliente;
     private String nombre;
     private String correo;
     private int telefono;
@@ -26,6 +27,14 @@ public class Cliente {
     }
 
     // Getters y Setters
+
+    public int getId_cliente() {
+        return id_cliente;
+    }
+
+    public void setId_cliente(int id_cliente) {
+        this.id_cliente = id_cliente;
+    }
     
     public String getNombre() {
         return nombre;
