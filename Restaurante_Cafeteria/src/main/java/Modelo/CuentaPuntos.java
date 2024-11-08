@@ -13,7 +13,8 @@ public class CuentaPuntos {
     private int id_cliente;
     private int puntos;
 
-    public CuentaPuntos() {}
+    public CuentaPuntos() {
+    }
 
     public CuentaPuntos(int id_cuenta, int id_cliente, int puntos) {
         this.id_cuenta = id_cuenta;

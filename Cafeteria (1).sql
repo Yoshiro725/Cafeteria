@@ -71,11 +71,12 @@ CREATE TABLE Pedidos (
 
 -- Crear tabla Detalle Pedido
 CREATE TABLE Detalle_Pedido (
-    id_detalle SERIAL PRIMARY KEY,
+    id_detalle SERIAL,
     id_pedido INT,
     id_producto INT,
     cantidad INT,
     subtotal NUMERIC(10, 2),
+    PRIMARY KEY (id_detalle,id_pedido),
     FOREIGN KEY (id_pedido) REFERENCES Pedidos(id_pedido),
     FOREIGN KEY (id_producto) REFERENCES Productos(id_producto)
 );

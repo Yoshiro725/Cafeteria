@@ -11,7 +11,9 @@ import java.util.ArrayList;
  * @author user
  */
 public class CRUDRecompensa implements Almacenamiento{
-
+    ArrayList<Recompensa> listaRecompensa;
+    Recompensa objMRecompensa;
+    ConexionBD objBD = new ConexionBD();
     @Override
     public void create() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
