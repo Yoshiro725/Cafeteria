@@ -26,16 +26,79 @@ public class Confirmar_pedido_cliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btn_regresar = new javax.swing.JButton();
+        btn_confirmar = new javax.swing.JButton();
+        btn_confirmarOrd = new javax.swing.JButton();
+        btn_facturar = new javax.swing.JButton();
+        btn_facturar1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("jLabel1");
+        btn_regresar.setBackground(new java.awt.Color(228, 208, 194));
+        btn_regresar.setText("Regresar");
+        btn_regresar.setBorder(null);
+        btn_regresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_regresarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 100, 30));
+
+        btn_confirmar.setBackground(new java.awt.Color(228, 208, 194));
+        btn_confirmar.setText("Confirmar");
+        btn_confirmar.setBorder(null);
+        btn_confirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_confirmarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_confirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 520, 100, 40));
+
+        btn_confirmarOrd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icono confirmar orden.png"))); // NOI18N
+        btn_confirmarOrd.setBorder(null);
+        getContentPane().add(btn_confirmarOrd, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 580, 50, 40));
+
+        btn_facturar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icono orden.png"))); // NOI18N
+        btn_facturar.setBorder(null);
+        btn_facturar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_facturarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_facturar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 580, 60, 40));
+
+        btn_facturar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icono factura.png"))); // NOI18N
+        btn_facturar1.setBorder(null);
+        btn_facturar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_facturar1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_facturar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, 60, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/confrimar orden.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_regresarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_regresarActionPerformed
+
+    private void btn_confirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_confirmarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_confirmarActionPerformed
+
+    private void btn_facturarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_facturarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_facturarActionPerformed
+
+    private void btn_facturar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_facturar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_facturar1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -73,6 +136,11 @@ public class Confirmar_pedido_cliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_confirmar;
+    private javax.swing.JButton btn_confirmarOrd;
+    private javax.swing.JButton btn_facturar;
+    private javax.swing.JButton btn_facturar1;
+    private javax.swing.JButton btn_regresar;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
