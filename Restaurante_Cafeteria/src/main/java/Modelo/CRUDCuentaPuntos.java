@@ -91,7 +91,7 @@ public class CRUDCuentaPuntos implements Almacenamiento{
     public void delete() {
         objBD.connectDB();
             try {
-                String query = "DELETE FROM clientes WHERE ClienteID = ?";
+                String query = "DELETE FROM Cuenta_Puntos WHERE id_cuenta = ?";
                 PreparedStatement statement = objBD.connection.prepareStatement(query);
                 statement.setInt(1, objMCuentaPuntos.getId_cuenta());
                 statement.executeUpdate();
