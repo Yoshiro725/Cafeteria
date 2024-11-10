@@ -152,15 +152,15 @@ public class Inicio_clientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_bebidas;
-    private javax.swing.JButton btn_comida;
-    private javax.swing.JButton btn_confirmar;
-    private javax.swing.JButton btn_facturar;
+    public javax.swing.JButton btn_bebidas;
+    public javax.swing.JButton btn_comida;
+    public javax.swing.JButton btn_confirmar;
+    public javax.swing.JButton btn_facturar;
     private javax.swing.JButton btn_ordenar;
-    private javax.swing.JButton btn_ordenar1;
-    private javax.swing.JButton btn_paquetes;
-    private javax.swing.JButton btn_postres;
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton btn_ordenar1;
+    public javax.swing.JButton btn_paquetes;
+    public javax.swing.JButton btn_postres;
+    public javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

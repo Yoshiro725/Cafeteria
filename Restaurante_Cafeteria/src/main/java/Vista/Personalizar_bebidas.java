@@ -46,6 +46,7 @@ public class Personalizar_bebidas extends javax.swing.JFrame {
         jButton12 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -90,13 +91,14 @@ public class Personalizar_bebidas extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Selecciona-" }));
+        jComboBox4.setToolTipText("");
         getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 140, -1));
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Selecciona-" }));
         getContentPane().add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 180, 30));
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Selecciona-" }));
         getContentPane().add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 180, 30));
 
         jButton8.setBackground(new java.awt.Color(219, 215, 194));
@@ -122,7 +124,7 @@ public class Personalizar_bebidas extends javax.swing.JFrame {
                 jButton11ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 440, 70, 30));
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 440, 70, 40));
 
         jButton12.setBackground(new java.awt.Color(219, 215, 194));
         jButton12.setText("jButton5");
@@ -130,14 +132,21 @@ public class Personalizar_bebidas extends javax.swing.JFrame {
         getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 443, 80, 30));
 
         jButton13.setBackground(new java.awt.Color(228, 208, 194));
-        jButton13.setText("jButton6");
+        jButton13.setText("< regresar");
         jButton13.setBorder(null);
         getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 590, 90, 40));
 
         jButton14.setBackground(new java.awt.Color(228, 208, 194));
-        jButton14.setText("jButton7");
+        jButton14.setText("Ordenar");
         jButton14.setBorder(null);
         getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 593, 90, 30));
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 520, 170, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bebidas.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -152,6 +161,10 @@ public class Personalizar_bebidas extends javax.swing.JFrame {
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -190,25 +203,26 @@ public class Personalizar_bebidas extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
+    public javax.swing.JButton jButton10;
+    public javax.swing.JButton jButton11;
+    public javax.swing.JButton jButton12;
+    public javax.swing.JButton jButton13;
+    public javax.swing.JButton jButton14;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    public javax.swing.JButton jButton8;
+    public javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
+    public javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox5;
-    private javax.swing.JComboBox<String> jComboBox6;
+    public javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JLabel jLabel1;
+    public javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
