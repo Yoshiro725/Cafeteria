@@ -4,17 +4,22 @@
  */
 package Vista;
 
+import Controladores_yadhir.ControladorMenu_colaboraciones;
+
 /**
  *
  * @author fresi
  */
 public class Menu_colaboraciones extends javax.swing.JFrame {
+    
+    ControladorMenu_colaboraciones objControladorMenu_colaboraciones;
 
     /**
      * Creates new form Menu_colaboraciones
      */
     public Menu_colaboraciones() {
         initComponents();
+        objControladorMenu_colaboraciones = new ControladorMenu_colaboraciones(this);
     }
 
     /**

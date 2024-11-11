@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 public class ControladorMenu_colaboraciones implements ActionListener{
     
     Menu_colaboraciones objMenu_colaboraciones;
+    String seleccion;
 
     public ControladorMenu_colaboraciones(Menu_colaboraciones objMenu_colaboraciones) {
         this.objMenu_colaboraciones = objMenu_colaboraciones;
@@ -24,11 +25,13 @@ public class ControladorMenu_colaboraciones implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if(this.objMenu_colaboraciones.jButton5 == e.getSource()){
             //escoger paquete 1//
+            seleccion = (String) this.objMenu_colaboraciones.jComboBox4.getSelectedItem();
             new Confirmar_pedido_cliente().setVisible(true);
             this.objMenu_colaboraciones.dispose();
         }
         if(this.objMenu_colaboraciones.jButton6 == e.getSource()){
             //escoger paquete 2//
+            seleccion = (String) this.objMenu_colaboraciones.jComboBox3.getSelectedItem();
             new Confirmar_pedido_cliente().setVisible(true);
             this.objMenu_colaboraciones.dispose();
         }
@@ -43,11 +46,15 @@ public class ControladorMenu_colaboraciones implements ActionListener{
             this.objMenu_colaboraciones.dispose();
         }
         if(this.objMenu_colaboraciones.jComboBox3 == e.getSource()){
-            
+            //paquetes 2//
         }
         if(this.objMenu_colaboraciones.jComboBox4 == e.getSource()){
-            
+            //paquetes 1//
         }
+    }
+
+    public String getSeleccion() {
+        return seleccion;
     }
     
 }

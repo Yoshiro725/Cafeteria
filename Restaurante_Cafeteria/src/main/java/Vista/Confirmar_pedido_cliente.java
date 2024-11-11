@@ -4,17 +4,22 @@
  */
 package Vista;
 
+import Controladores_yadhir.ControladorConfirmar_pedido_cliente;
+
 /**
  *
  * @author fresi
  */
 public class Confirmar_pedido_cliente extends javax.swing.JFrame {
+    
+    ControladorConfirmar_pedido_cliente objControladorConfirmar_pedido_cliente;
 
     /**
      * Creates new form Confirmar_pedido_cliente
      */
     public Confirmar_pedido_cliente() {
         initComponents();
+        objControladorConfirmar_pedido_cliente = new ControladorConfirmar_pedido_cliente(this);
     }
 
     /**
@@ -31,6 +36,7 @@ public class Confirmar_pedido_cliente extends javax.swing.JFrame {
         btn_confirmarOrd = new javax.swing.JButton();
         btn_facturar = new javax.swing.JButton();
         btn_facturar1 = new javax.swing.JButton();
+        jLabelpedidos = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -77,6 +83,9 @@ public class Confirmar_pedido_cliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btn_facturar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, 60, 40));
+
+        jLabelpedidos.setText("jLabel2");
+        getContentPane().add(jLabelpedidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 450, 350));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/confrimar orden.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -142,5 +151,6 @@ public class Confirmar_pedido_cliente extends javax.swing.JFrame {
     public javax.swing.JButton btn_facturar1;
     public javax.swing.JButton btn_regresar;
     private javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabelpedidos;
     // End of variables declaration//GEN-END:variables
 }
