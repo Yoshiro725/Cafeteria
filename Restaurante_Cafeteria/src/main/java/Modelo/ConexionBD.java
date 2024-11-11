@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 public class ConexionBD {
     Connection connection  = null;
     
-    public void connectDB(){
+    public Connection connectDB(){
             try{
             try{
                 Class.forName("org.postgresql.Driver");
@@ -29,7 +29,7 @@ public class ConexionBD {
              System.out.println(valid ? "Ta bueno":"Ta malo");
         }catch (java.sql.SQLException sqle){
             System.out.println("Error"+ sqle);
-        }
+        }return connection;
     }
     
     public void desconectedDB() {

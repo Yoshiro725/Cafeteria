@@ -4,17 +4,22 @@
  */
 package Vista;
 
+import Controladores_yadhir.ControladorReporte_platillo_popular;
+
 /**
  *
  * @author fresi
  */
 public class Reporte_platillo_popular extends javax.swing.JFrame {
+    
+    ControladorReporte_platillo_popular objControladorReporte_platillo_popular;
 
     /**
      * Creates new form Reporte_platillo_popular
      */
     public Reporte_platillo_popular() {
         initComponents();
+        objControladorReporte_platillo_popular = new ControladorReporte_platillo_popular(this);
     }
 
     /**

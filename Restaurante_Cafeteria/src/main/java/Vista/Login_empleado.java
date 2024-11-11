@@ -4,17 +4,22 @@
  */
 package Vista;
 
+import Controladores_yadhir.ControladorLogin_empleado;
+
 /**
  *
  * @author fresi
  */
 public class Login_empleado extends javax.swing.JFrame {
+    
+    ControladorLogin_empleado objControladorLogin_empleado;
 
     /**
      * Creates new form Login_empleado
      */
     public Login_empleado() {
         initComponents();
+        objControladorLogin_empleado = new ControladorLogin_empleado(this);
     }
 
     /**
@@ -94,7 +99,7 @@ public class Login_empleado extends javax.swing.JFrame {
                 new Login_empleado().setVisible(true);
             }
         });
-    }
+    }  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton jButton1;

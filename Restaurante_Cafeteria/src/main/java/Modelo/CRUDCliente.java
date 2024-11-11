@@ -82,7 +82,7 @@ public class CRUDCliente implements Almacenamiento {
 
         try {
             objBD.connection.createStatement().execute(
-                    "UPDATE cliente SET ? = ? WHERE clienteid = " + objMCliente.getId_cliente() + ";"
+                    "UPDATE cliente SET ? = ? WHERE id_cliente = " + objMCliente.getId_cliente() + ";"
             );
         } catch (java.sql.SQLException sqle) {
             System.out.println("Error: " + sqle);
@@ -94,7 +94,7 @@ public class CRUDCliente implements Almacenamiento {
     public void delete() {
         objBD.connectDB();
         try {
-            String query = "DELETE FROM clientes WHERE ClienteID = ?";
+            String query = "DELETE FROM clientes WHERE id_cliente = ?";
             PreparedStatement statement = objBD.connection.prepareStatement(query);
             statement.setInt(1, objMCliente.getId_cliente());
             statement.executeUpdate();
