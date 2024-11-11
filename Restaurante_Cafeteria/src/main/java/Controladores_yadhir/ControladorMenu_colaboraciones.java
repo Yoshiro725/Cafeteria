@@ -1,5 +1,6 @@
 package Controladores_yadhir;
 
+import Vista.Confirmar_pedido_cliente;
 import Vista.Inicio_clientes;
 import Vista.Menu_colaboraciones;
 import java.awt.event.ActionEvent;
@@ -23,9 +24,13 @@ public class ControladorMenu_colaboraciones implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if(this.objMenu_colaboraciones.jButton5 == e.getSource()){
             //escoger paquete 1//
+            new Confirmar_pedido_cliente().setVisible(true);
+            this.objMenu_colaboraciones.dispose();
         }
         if(this.objMenu_colaboraciones.jButton6 == e.getSource()){
             //escoger paquete 2//
+            new Confirmar_pedido_cliente().setVisible(true);
+            this.objMenu_colaboraciones.dispose();
         }
         if(this.objMenu_colaboraciones.jButton7 == e.getSource()){
             //atras//
@@ -34,6 +39,8 @@ public class ControladorMenu_colaboraciones implements ActionListener{
         }
         if(this.objMenu_colaboraciones.jButton8 == e.getSource()){
             //comprar mas//
+            new Inicio_clientes().setVisible(true);
+            this.objMenu_colaboraciones.dispose();
         }
         if(this.objMenu_colaboraciones.jComboBox3 == e.getSource()){
             
