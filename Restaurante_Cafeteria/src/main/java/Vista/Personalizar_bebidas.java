@@ -220,7 +220,7 @@ public class Personalizar_bebidas extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     public javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox5;
+    public javax.swing.JComboBox<String> jComboBox5;
     public javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JLabel jLabel1;
     public javax.swing.JTextField jTextField1;
