@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 public class ControladorLogin_empleado implements ActionListener{
     
     Login_empleado objLogin_empleado;
+    String Contraseña="empleado321";
 
     public ControladorLogin_empleado(Login_empleado objLogin_empleado) {
         this.objLogin_empleado = objLogin_empleado;
@@ -26,8 +27,10 @@ public class ControladorLogin_empleado implements ActionListener{
         }
         if(this.objLogin_empleado.jButton2 == e.getSource()){
             //boton de aceptar//
-            new Inicio_empleado().setVisible(true);
-            this.objLogin_empleado.dispose();
+            if(this.objLogin_empleado.jPasswordField1.equals(Contraseña)){
+                new Inicio_empleado().setVisible(true);
+                this.objLogin_empleado.dispose();
+            }
         }
         if(this.objLogin_empleado.jPasswordField1 == e.getSource()){
             //contraseña//

@@ -1,5 +1,6 @@
 package Controladores_yadhir;
 
+import Vista.Inicio_clientes;
 import Vista.Menu_paquetes;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -28,6 +29,8 @@ public class ControladorMenu_paquetes implements ActionListener{
         }
         if(this.objMenu_paquetes.jButton3 == e.getSource()){
             //atras//
+            new Inicio_clientes().setVisible(true);
+            this.objMenu_paquetes.dispose();
         }
         if(this.objMenu_paquetes.jButton4 == e.getSource()){
             //comprar mas//
