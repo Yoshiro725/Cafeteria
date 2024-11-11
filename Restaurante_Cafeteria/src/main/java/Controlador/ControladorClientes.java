@@ -9,6 +9,7 @@ package Controlador;
  * @author grecia
  */
   // ControladorClientes.java
+import Modelo.Cliente;
 import Vista.Confirmar_pedido_cliente;
 import Vista.Factura_cliente;
 import Vista.Inicio_clientes;
@@ -21,7 +22,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
 public class ControladorClientes implements ActionListener {
-    private ModeloClientes modelo;
+    private final Cliente modelo;
     private Inicio_clientes inicio_clientes;
     private final Personalizar_bebidas Personalizar_bebidas;
     private final Personalizar_postres Personalizar_postres;
@@ -31,7 +32,7 @@ public class ControladorClientes implements ActionListener {
     private final Menu_paquetes Menu_paquetes;
     private final Inicio_clientes Inicio_clientes;
 
-    public ControladorClientes(ModeloClientes modelo, Inicio_clientes inicio, Personalizar_bebidas bebidas,
+    public ControladorClientes(Modelo.Cliente modelo, Inicio_clientes inicio, Personalizar_bebidas bebidas,
                                Personalizar_postres postres, Personalizar_comidas comida,
                                Confirmar_pedido_cliente confirmar, Factura_cliente factura, Menu_paquetes paquetes) {
         this.modelo = modelo;
