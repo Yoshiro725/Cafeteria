@@ -4,17 +4,22 @@
  */
 package Vista;
 
+import Controladores_yadhir.ControladorLogin_gerente;
+
 /**
  *
  * @author fresi
  */
 public class Login_gerente extends javax.swing.JFrame {
+    
+    ControladorLogin_gerente objControladorLogin_gerente;
 
     /**
      * Creates new form Login_gerente
      */
     public Login_gerente() {
         initComponents();
+        objControladorLogin_gerente = new ControladorLogin_gerente(this);
     }
 
     /**

@@ -4,17 +4,22 @@
  */
 package Vista;
 
+import Controladores_yadhir.ControladorReporte_ingresos;
+
 /**
  *
  * @author fresi
  */
 public class Reporte_ingresos extends javax.swing.JFrame {
+    
+    ControladorReporte_ingresos objControladorReporte_ingresos;
 
     /**
      * Creates new form Reporte_ingresos
      */
     public Reporte_ingresos() {
         initComponents();
+        objControladorReporte_ingresos = new ControladorReporte_ingresos(this);
     }
 
     /**
