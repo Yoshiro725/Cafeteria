@@ -100,9 +100,9 @@ public class Inicio_empleado extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_pedidos;
-    private javax.swing.JButton btn_platillos;
-    private javax.swing.JButton btn_reportes;
+    public javax.swing.JButton btn_pedidos;
+    public javax.swing.JButton btn_platillos;
+    public javax.swing.JButton btn_reportes;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

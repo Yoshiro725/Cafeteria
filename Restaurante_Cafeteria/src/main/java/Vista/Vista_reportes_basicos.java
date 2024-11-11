@@ -41,12 +41,12 @@ public class Vista_reportes_basicos extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 280, 120, 40));
 
         jButton2.setBackground(new java.awt.Color(228, 208, 194));
-        jButton2.setText("jButton2");
+        jButton2.setText("Clientes por mes");
         jButton2.setBorder(null);
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 280, 120, 40));
 
         jButton3.setBackground(new java.awt.Color(228, 208, 194));
-        jButton3.setText("jButton3");
+        jButton3.setText("Ingresos");
         jButton3.setBorder(null);
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 370, 120, 40));
 
@@ -97,10 +97,10 @@ public class Vista_reportes_basicos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    public javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton2;
+    public javax.swing.JButton jButton3;
+    public javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

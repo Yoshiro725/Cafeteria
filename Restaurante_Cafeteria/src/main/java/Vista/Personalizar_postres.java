@@ -115,22 +115,22 @@ public class Personalizar_postres extends javax.swing.JFrame {
                 jButton19ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 440, 70, 30));
+        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 440, 70, 40));
 
         jButton20.setBackground(new java.awt.Color(228, 208, 194));
-        jButton20.setText("jButton6");
+        jButton20.setText("< Atras");
         jButton20.setBorder(null);
         getContentPane().add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 590, 90, 40));
 
         jButton21.setBackground(new java.awt.Color(228, 208, 194));
-        jButton21.setText("jButton7");
+        jButton21.setText("Ordenar");
         jButton21.setBorder(null);
         getContentPane().add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 593, 90, 30));
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Selecciona-" }));
         getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 140, -1));
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Selecciona-" }));
         getContentPane().add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 180, 20));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 530, 200, -1));
 
@@ -189,20 +189,20 @@ public class Personalizar_postres extends javax.swing.JFrame {
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
+    public javax.swing.JButton jButton15;
+    public javax.swing.JButton jButton16;
+    public javax.swing.JButton jButton17;
+    public javax.swing.JButton jButton18;
+    public javax.swing.JButton jButton19;
+    public javax.swing.JButton jButton20;
+    public javax.swing.JButton jButton21;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox5;
+    public javax.swing.JComboBox<String> jComboBox4;
+    public javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

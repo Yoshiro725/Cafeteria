@@ -140,12 +140,12 @@ public class Factura_cliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_confirmar;
-    private javax.swing.JButton btn_confirmarOrd;
-    private javax.swing.JButton btn_facturar;
-    private javax.swing.JButton btn_facturar1;
+    public javax.swing.JButton btn_confirmar;
+    public javax.swing.JButton btn_confirmarOrd;
+    public javax.swing.JButton btn_facturar;
+    public javax.swing.JButton btn_facturar1;
     private javax.swing.JButton btn_ordenar;
-    private javax.swing.JButton btn_regresar;
+    public javax.swing.JButton btn_regresar;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
