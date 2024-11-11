@@ -4,6 +4,8 @@
  */
 package Vista;
 
+import Controladores_Yoshiro.ControladorPersonalizarBebidas;
+
 /**
  *
  * @author fresi
@@ -13,8 +15,11 @@ public class Personalizar_bebidas extends javax.swing.JFrame {
     /**
      * Creates new form Personalizar_bebidas
      */
+    ControladorPersonalizarBebidas objControladorPersonalizarBebidas;
+    
     public Personalizar_bebidas() {
         initComponents();
+        objControladorPersonalizarBebidas = new ControladorPersonalizarBebidas(this);
     }
 
     /**

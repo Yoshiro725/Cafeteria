@@ -4,17 +4,21 @@
  */
 package Vista;
 
+import Controladores_Yoshiro.ControladorPersonalizarComidas;
+
 /**
+ * 
  *
  * @author fresi
  */
 public class Personalizar_comidas extends javax.swing.JFrame {
-
+    ControladorPersonalizarComidas objControladorPersonalizarComidas;
     /**
      * Creates new form Personalizar_comidas
      */
     public Personalizar_comidas() {
         initComponents();
+        objControladorPersonalizarComidas = new ControladorPersonalizarComidas(this);
     }
 
     /**
