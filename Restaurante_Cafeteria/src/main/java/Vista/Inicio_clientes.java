@@ -30,7 +30,7 @@ public class Inicio_clientes extends javax.swing.JFrame {
         btn_postres = new javax.swing.JButton();
         btn_comida = new javax.swing.JButton();
         btn_paquetes = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btn_colaboraciones = new javax.swing.JButton();
         btn_facturar = new javax.swing.JButton();
         btn_ordenar = new javax.swing.JButton();
         btn_confirmar = new javax.swing.JButton();
@@ -60,15 +60,15 @@ public class Inicio_clientes extends javax.swing.JFrame {
         btn_paquetes.setBorder(null);
         getContentPane().add(btn_paquetes, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 90, 60));
 
-        jButton1.setBackground(new java.awt.Color(219, 215, 194));
-        jButton1.setText("Colaboraciones");
-        jButton1.setBorder(null);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btn_colaboraciones.setBackground(new java.awt.Color(219, 215, 194));
+        btn_colaboraciones.setText("Colaboraciones");
+        btn_colaboraciones.setBorder(null);
+        btn_colaboraciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btn_colaboracionesActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 390, 220, 100));
+        getContentPane().add(btn_colaboraciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 390, 220, 100));
 
         btn_facturar.setBackground(new java.awt.Color(254, 240, 237));
         btn_facturar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icono factura.png"))); // NOI18N
@@ -104,9 +104,9 @@ public class Inicio_clientes extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btn_colaboracionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_colaboracionesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btn_colaboracionesActionPerformed
 
     private void btn_facturarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_facturarActionPerformed
         // TODO add your handling code here:
@@ -153,6 +153,7 @@ public class Inicio_clientes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btn_bebidas;
+    public javax.swing.JButton btn_colaboraciones;
     public javax.swing.JButton btn_comida;
     public javax.swing.JButton btn_confirmar;
     public javax.swing.JButton btn_facturar;
@@ -160,7 +161,6 @@ public class Inicio_clientes extends javax.swing.JFrame {
     public javax.swing.JButton btn_ordenar1;
     public javax.swing.JButton btn_paquetes;
     public javax.swing.JButton btn_postres;
-    public javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
